@@ -1,0 +1,86 @@
+.App {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.App table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.App thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+.App th,
+.App td {
+  padding: 12px 15px;
+}
+
+.App tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.App tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.App tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+
+
+.App button {
+  background-color: #009879; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px; 
+  transition: all 0.5s ease;
+}
+
+.App button:hover {
+  background-color: #007B63; 
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.App tbody tr {
+  animation: slideIn 0.5s ease;
+}
+
+/* Add a startup animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.App {
+  animation: fadeIn 2s ease;
+}
